@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E91E68091D8EAC9A008E3C29 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91E68081D8EAC9A008E3C29 /* HomeViewController.m */; };
+		E91E680C1D8EADA3008E3C29 /* NewRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91E680B1D8EADA3008E3C29 /* NewRunViewController.m */; };
+		E9A9BA1B1D8F94DE0008C5B7 /* MathController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9BA1A1D8F94DE0008C5B7 /* MathController.m */; };
+		E9A9BA1D1D91EA6B0008C5B7 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A9BA1C1D91EA6B0008C5B7 /* HealthKit.framework */; };
+		E9DB82F91D4624B500A94824 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB82F81D4624B500A94824 /* main.m */; };
+		E9DB82FC1D4624B500A94824 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB82FB1D4624B500A94824 /* AppDelegate.m */; };
+		E9DB83051D4624B500A94824 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB83041D4624B500A94824 /* DetailViewController.m */; };
+		E9DB83081D4624B500A94824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DB83061D4624B500A94824 /* Main.storyboard */; };
+		E9DB830A1D4624B600A94824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9DB83091D4624B600A94824 /* Assets.xcassets */; };
+		E9DB830D1D4624B600A94824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DB830B1D4624B600A94824 /* LaunchScreen.storyboard */; };
+		E9DB83161D4624E100A94824 /* ShitHappens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9DB83141D4624E100A94824 /* ShitHappens.xcdatamodeld */; };
+		E9DB831F1D4626FE00A94824 /* Run+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB83181D4626FE00A94824 /* Run+CoreDataProperties.m */; };
+		E9DB83201D4626FE00A94824 /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB831A1D4626FE00A94824 /* Run.m */; };
+		E9DB83211D4626FE00A94824 /* Location+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB831C1D4626FE00A94824 /* Location+CoreDataProperties.m */; };
+		E9DB83221D4626FE00A94824 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB831E1D4626FE00A94824 /* Location.m */; };
+		E9DB83241D46292F00A94824 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DB83231D46292F00A94824 /* MapKit.framework */; };
+		E9DB83261D46293800A94824 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DB83251D46293800A94824 /* CoreGraphics.framework */; };
+		E9DB83281D46294800A94824 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DB83271D46294800A94824 /* Foundation.framework */; };
+		E9DB832A1D46294E00A94824 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DB83291D46294E00A94824 /* CoreData.framework */; };
+		E9DB832C1D46295900A94824 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DB832B1D46295900A94824 /* UIKit.framework */; };
+		E9DB842A1D5D07CD00A94824 /* ariel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB83FF1D5D07CD00A94824 /* ariel.jpg */; };
+		E9DB842B1D5D07CD00A94824 /* asteroid_belt.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84001D5D07CD00A94824 /* asteroid_belt.png */; };
+		E9DB842C1D5D07CD00A94824 /* atmosphere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84011D5D07CD00A94824 /* atmosphere.jpg */; };
+		E9DB842D1D5D07CD00A94824 /* badges.txt in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84021D5D07CD00A94824 /* badges.txt */; };
+		E9DB842E1D5D07CD00A94824 /* blue-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84031D5D07CD00A94824 /* blue-btn.png */; };
+		E9DB842F1D5D07CD00A94824 /* callisto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84041D5D07CD00A94824 /* callisto.jpg */; };
+		E9DB84301D5D07CD00A94824 /* ceres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84051D5D07CD00A94824 /* ceres.jpg */; };
+		E9DB84311D5D07CD00A94824 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84061D5D07CD00A94824 /* Default-568h@2x.png */; };
+		E9DB84321D5D07CD00A94824 /* deimos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84071D5D07CD00A94824 /* deimos.jpg */; };
+		E9DB84331D5D07CD00A94824 /* dione.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84081D5D07CD00A94824 /* dione.jpg */; };
+		E9DB84341D5D07CD00A94824 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84091D5D07CD00A94824 /* earth.jpg */; };
+		E9DB84351D5D07CD00A94824 /* enceladus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB840A1D5D07CD00A94824 /* enceladus.jpg */; };
+		E9DB84361D5D07CD00A94824 /* europa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB840B1D5D07CD00A94824 /* europa.jpg */; };
+		E9DB84371D5D07CD00A94824 /* ganymede.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB840C1D5D07CD00A94824 /* ganymede.jpg */; };
+		E9DB84381D5D07CD00A94824 /* green-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB840D1D5D07CD00A94824 /* green-btn.png */; };
+		E9DB84391D5D07CD00A94824 /* iapetus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB840E1D5D07CD00A94824 /* iapetus.jpg */; };
+		E9DB843A1D5D07CD00A94824 /* Icon-App.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB840F1D5D07CD00A94824 /* Icon-App.png */; };
+		E9DB843B1D5D07CD00A94824 /* Icon-Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84101D5D07CD00A94824 /* Icon-Settings.png */; };
+		E9DB843C1D5D07CD00A94824 /* Icon-Spotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84111D5D07CD00A94824 /* Icon-Spotlight.png */; };
+		E9DB843D1D5D07CD00A94824 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84121D5D07CD00A94824 /* info@2x.png */; };
+		E9DB843E1D5D07CD00A94824 /* interstellar_space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84131D5D07CD00A94824 /* interstellar_space.jpg */; };
+		E9DB843F1D5D07CD00A94824 /* io.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84141D5D07CD00A94824 /* io.jpg */; };
+		E9DB84401D5D07CD00A94824 /* kuiper_belt.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84151D5D07CD00A94824 /* kuiper_belt.png */; };
+		E9DB84411D5D07CD00A94824 /* magnetotail.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84161D5D07CD00A94824 /* magnetotail.png */; };
+		E9DB84421D5D07CD00A94824 /* mapPin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84171D5D07CD00A94824 /* mapPin@2x.png */; };
+		E9DB84431D5D07CD00A94824 /* mars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84181D5D07CD00A94824 /* mars.jpg */; };
+		E9DB84441D5D07CD00A94824 /* mimas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84191D5D07CD00A94824 /* mimas.jpg */; };
+		E9DB84451D5D07CD00A94824 /* miranda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB841A1D5D07CD00A94824 /* miranda.jpg */; };
+		E9DB84461D5D07CD00A94824 /* moon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB841B1D5D07CD00A94824 /* moon.jpg */; };
+		E9DB84471D5D07CD00A94824 /* oberon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB841C1D5D07CD00A94824 /* oberon.jpg */; };
+		E9DB84481D5D07CD00A94824 /* phobos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB841D1D5D07CD00A94824 /* phobos.jpg */; };
+		E9DB84491D5D07CD00A94824 /* pluto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB841E1D5D07CD00A94824 /* pluto.jpg */; };
+		E9DB844A1D5D07CD00A94824 /* red-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB841F1D5D07CD00A94824 /* red-btn.png */; };
+		E9DB844B1D5D07CD00A94824 /* rhea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84201D5D07CD00A94824 /* rhea.jpg */; };
+		E9DB844C1D5D07CD00A94824 /* saturn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84211D5D07CD00A94824 /* saturn.jpg */; };
+		E9DB844D1D5D07CD00A94824 /* spaceship-gold.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84221D5D07CD00A94824 /* spaceship-gold.png */; };
+		E9DB844E1D5D07CD00A94824 /* spaceship-silver.png in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84231D5D07CD00A94824 /* spaceship-silver.png */; };
+		E9DB844F1D5D07CD00A94824 /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84241D5D07CD00A94824 /* success.wav */; };
+		E9DB84501D5D07CD00A94824 /* tethys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84251D5D07CD00A94824 /* tethys.jpg */; };
+		E9DB84511D5D07CD00A94824 /* titan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84261D5D07CD00A94824 /* titan.jpg */; };
+		E9DB84521D5D07CD00A94824 /* titania.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84271D5D07CD00A94824 /* titania.jpg */; };
+		E9DB84531D5D07CD00A94824 /* triton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84281D5D07CD00A94824 /* triton.jpg */; };
+		E9DB84541D5D07CD00A94824 /* umbriel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9DB84291D5D07CD00A94824 /* umbriel.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E91E68071D8EAC9A008E3C29 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E91E68081D8EAC9A008E3C29 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E91E680A1D8EADA3008E3C29 /* NewRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRunViewController.h; sourceTree = "<group>"; };
+		E91E680B1D8EADA3008E3C29 /* NewRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRunViewController.m; sourceTree = "<group>"; };
+		E9A9BA191D8F94DE0008C5B7 /* MathController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathController.h; sourceTree = "<group>"; };
+		E9A9BA1A1D8F94DE0008C5B7 /* MathController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathController.m; sourceTree = "<group>"; };
+		E9A9BA1C1D91EA6B0008C5B7 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		E9A9BA1E1D91EA6B0008C5B7 /* ShitHappens.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ShitHappens.entitlements; sourceTree = "<group>"; };
+		E9DB82F41D4624B500A94824 /* ShitHappens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShitHappens.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9DB82F81D4624B500A94824 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9DB82FA1D4624B500A94824 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9DB82FB1D4624B500A94824 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9DB83031D4624B500A94824 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E9DB83041D4624B500A94824 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E9DB83071D4624B500A94824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9DB83091D4624B600A94824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9DB830C1D4624B600A94824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9DB830E1D4624B600A94824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9DB83151D4624E100A94824 /* ShitHappens.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShitHappens.xcdatamodel; sourceTree = "<group>"; };
+		E9DB83171D4626FE00A94824 /* Run+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Run+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E9DB83181D4626FE00A94824 /* Run+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Run+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E9DB83191D4626FE00A94824 /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
+		E9DB831A1D4626FE00A94824 /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
+		E9DB831B1D4626FE00A94824 /* Location+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Location+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E9DB831C1D4626FE00A94824 /* Location+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Location+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E9DB831D1D4626FE00A94824 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		E9DB831E1D4626FE00A94824 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		E9DB83231D46292F00A94824 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E9DB83251D46293800A94824 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E9DB83271D46294800A94824 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E9DB83291D46294E00A94824 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E9DB832B1D46295900A94824 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E9DB83FF1D5D07CD00A94824 /* ariel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ariel.jpg; path = SupportFiles/ariel.jpg; sourceTree = "<group>"; };
+		E9DB84001D5D07CD00A94824 /* asteroid_belt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = asteroid_belt.png; path = SupportFiles/asteroid_belt.png; sourceTree = "<group>"; };
+		E9DB84011D5D07CD00A94824 /* atmosphere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = atmosphere.jpg; path = SupportFiles/atmosphere.jpg; sourceTree = "<group>"; };
+		E9DB84021D5D07CD00A94824 /* badges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = badges.txt; path = SupportFiles/badges.txt; sourceTree = "<group>"; };
+		E9DB84031D5D07CD00A94824 /* blue-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blue-btn.png"; path = "SupportFiles/blue-btn.png"; sourceTree = "<group>"; };
+		E9DB84041D5D07CD00A94824 /* callisto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = callisto.jpg; path = SupportFiles/callisto.jpg; sourceTree = "<group>"; };
+		E9DB84051D5D07CD00A94824 /* ceres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ceres.jpg; path = SupportFiles/ceres.jpg; sourceTree = "<group>"; };
+		E9DB84061D5D07CD00A94824 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "SupportFiles/Default-568h@2x.png"; sourceTree = "<group>"; };
+		E9DB84071D5D07CD00A94824 /* deimos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = deimos.jpg; path = SupportFiles/deimos.jpg; sourceTree = "<group>"; };
+		E9DB84081D5D07CD00A94824 /* dione.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dione.jpg; path = SupportFiles/dione.jpg; sourceTree = "<group>"; };
+		E9DB84091D5D07CD00A94824 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = earth.jpg; path = SupportFiles/earth.jpg; sourceTree = "<group>"; };
+		E9DB840A1D5D07CD00A94824 /* enceladus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = enceladus.jpg; path = SupportFiles/enceladus.jpg; sourceTree = "<group>"; };
+		E9DB840B1D5D07CD00A94824 /* europa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = europa.jpg; path = SupportFiles/europa.jpg; sourceTree = "<group>"; };
+		E9DB840C1D5D07CD00A94824 /* ganymede.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ganymede.jpg; path = SupportFiles/ganymede.jpg; sourceTree = "<group>"; };
+		E9DB840D1D5D07CD00A94824 /* green-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "green-btn.png"; path = "SupportFiles/green-btn.png"; sourceTree = "<group>"; };
+		E9DB840E1D5D07CD00A94824 /* iapetus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iapetus.jpg; path = SupportFiles/iapetus.jpg; sourceTree = "<group>"; };
+		E9DB840F1D5D07CD00A94824 /* Icon-App.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-App.png"; path = "SupportFiles/Icon-App.png"; sourceTree = "<group>"; };
+		E9DB84101D5D07CD00A94824 /* Icon-Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Settings.png"; path = "SupportFiles/Icon-Settings.png"; sourceTree = "<group>"; };
+		E9DB84111D5D07CD00A94824 /* Icon-Spotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Spotlight.png"; path = "SupportFiles/Icon-Spotlight.png"; sourceTree = "<group>"; };
+		E9DB84121D5D07CD00A94824 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "info@2x.png"; path = "SupportFiles/info@2x.png"; sourceTree = "<group>"; };
+		E9DB84131D5D07CD00A94824 /* interstellar_space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = interstellar_space.jpg; path = SupportFiles/interstellar_space.jpg; sourceTree = "<group>"; };
+		E9DB84141D5D07CD00A94824 /* io.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = io.jpg; path = SupportFiles/io.jpg; sourceTree = "<group>"; };
+		E9DB84151D5D07CD00A94824 /* kuiper_belt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kuiper_belt.png; path = SupportFiles/kuiper_belt.png; sourceTree = "<group>"; };
+		E9DB84161D5D07CD00A94824 /* magnetotail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magnetotail.png; path = SupportFiles/magnetotail.png; sourceTree = "<group>"; };
+		E9DB84171D5D07CD00A94824 /* mapPin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapPin@2x.png"; path = "SupportFiles/mapPin@2x.png"; sourceTree = "<group>"; };
+		E9DB84181D5D07CD00A94824 /* mars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mars.jpg; path = SupportFiles/mars.jpg; sourceTree = "<group>"; };
+		E9DB84191D5D07CD00A94824 /* mimas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mimas.jpg; path = SupportFiles/mimas.jpg; sourceTree = "<group>"; };
+		E9DB841A1D5D07CD00A94824 /* miranda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = miranda.jpg; path = SupportFiles/miranda.jpg; sourceTree = "<group>"; };
+		E9DB841B1D5D07CD00A94824 /* moon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = moon.jpg; path = SupportFiles/moon.jpg; sourceTree = "<group>"; };
+		E9DB841C1D5D07CD00A94824 /* oberon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = oberon.jpg; path = SupportFiles/oberon.jpg; sourceTree = "<group>"; };
+		E9DB841D1D5D07CD00A94824 /* phobos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = phobos.jpg; path = SupportFiles/phobos.jpg; sourceTree = "<group>"; };
+		E9DB841E1D5D07CD00A94824 /* pluto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pluto.jpg; path = SupportFiles/pluto.jpg; sourceTree = "<group>"; };
+		E9DB841F1D5D07CD00A94824 /* red-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red-btn.png"; path = "SupportFiles/red-btn.png"; sourceTree = "<group>"; };
+		E9DB84201D5D07CD00A94824 /* rhea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rhea.jpg; path = SupportFiles/rhea.jpg; sourceTree = "<group>"; };
+		E9DB84211D5D07CD00A94824 /* saturn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = saturn.jpg; path = SupportFiles/saturn.jpg; sourceTree = "<group>"; };
+		E9DB84221D5D07CD00A94824 /* spaceship-gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spaceship-gold.png"; path = "SupportFiles/spaceship-gold.png"; sourceTree = "<group>"; };
+		E9DB84231D5D07CD00A94824 /* spaceship-silver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spaceship-silver.png"; path = "SupportFiles/spaceship-silver.png"; sourceTree = "<group>"; };
+		E9DB84241D5D07CD00A94824 /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = success.wav; path = SupportFiles/success.wav; sourceTree = "<group>"; };
+		E9DB84251D5D07CD00A94824 /* tethys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tethys.jpg; path = SupportFiles/tethys.jpg; sourceTree = "<group>"; };
+		E9DB84261D5D07CD00A94824 /* titan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = titan.jpg; path = SupportFiles/titan.jpg; sourceTree = "<group>"; };
+		E9DB84271D5D07CD00A94824 /* titania.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = titania.jpg; path = SupportFiles/titania.jpg; sourceTree = "<group>"; };
+		E9DB84281D5D07CD00A94824 /* triton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = triton.jpg; path = SupportFiles/triton.jpg; sourceTree = "<group>"; };
+		E9DB84291D5D07CD00A94824 /* umbriel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = umbriel.jpg; path = SupportFiles/umbriel.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9DB82F11D4624B500A94824 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9DB832C1D46295900A94824 /* UIKit.framework in Frameworks */,
+				E9DB832A1D46294E00A94824 /* CoreData.framework in Frameworks */,
+				E9DB83281D46294800A94824 /* Foundation.framework in Frameworks */,
+				E9A9BA1D1D91EA6B0008C5B7 /* HealthKit.framework in Frameworks */,
+				E9DB83261D46293800A94824 /* CoreGraphics.framework in Frameworks */,
+				E9DB83241D46292F00A94824 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9DB82EB1D4624B500A94824 = {
+			isa = PBXGroup;
+			children = (
+				E9A9BA1C1D91EA6B0008C5B7 /* HealthKit.framework */,
+				E9DB832B1D46295900A94824 /* UIKit.framework */,
+				E9DB83291D46294E00A94824 /* CoreData.framework */,
+				E9DB83271D46294800A94824 /* Foundation.framework */,
+				E9DB83251D46293800A94824 /* CoreGraphics.framework */,
+				E9DB83231D46292F00A94824 /* MapKit.framework */,
+				E9DB82F61D4624B500A94824 /* ShitHappens */,
+				E9DB82F51D4624B500A94824 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9DB82F51D4624B500A94824 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9DB82F41D4624B500A94824 /* ShitHappens.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9DB82F61D4624B500A94824 /* ShitHappens */ = {
+			isa = PBXGroup;
+			children = (
+				E9A9BA1E1D91EA6B0008C5B7 /* ShitHappens.entitlements */,
+				E9DB82FA1D4624B500A94824 /* AppDelegate.h */,
+				E9DB82FB1D4624B500A94824 /* AppDelegate.m */,
+				E9DB83031D4624B500A94824 /* DetailViewController.h */,
+				E9DB83041D4624B500A94824 /* DetailViewController.m */,
+				E9DB83061D4624B500A94824 /* Main.storyboard */,
+				E9DB83091D4624B600A94824 /* Assets.xcassets */,
+				E9DB830B1D4624B600A94824 /* LaunchScreen.storyboard */,
+				E9DB830E1D4624B600A94824 /* Info.plist */,
+				E9DB83141D4624E100A94824 /* ShitHappens.xcdatamodeld */,
+				E9DB83171D4626FE00A94824 /* Run+CoreDataProperties.h */,
+				E9DB83181D4626FE00A94824 /* Run+CoreDataProperties.m */,
+				E9DB83191D4626FE00A94824 /* Run.h */,
+				E9DB831A1D4626FE00A94824 /* Run.m */,
+				E9DB831B1D4626FE00A94824 /* Location+CoreDataProperties.h */,
+				E9DB831C1D4626FE00A94824 /* Location+CoreDataProperties.m */,
+				E9DB831D1D4626FE00A94824 /* Location.h */,
+				E9DB831E1D4626FE00A94824 /* Location.m */,
+				E91E68071D8EAC9A008E3C29 /* HomeViewController.h */,
+				E91E68081D8EAC9A008E3C29 /* HomeViewController.m */,
+				E91E680A1D8EADA3008E3C29 /* NewRunViewController.h */,
+				E91E680B1D8EADA3008E3C29 /* NewRunViewController.m */,
+				E9A9BA191D8F94DE0008C5B7 /* MathController.h */,
+				E9A9BA1A1D8F94DE0008C5B7 /* MathController.m */,
+				E9DB82F71D4624B500A94824 /* Supporting Files */,
+			);
+			path = ShitHappens;
+			sourceTree = "<group>";
+		};
+		E9DB82F71D4624B500A94824 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9DB83FF1D5D07CD00A94824 /* ariel.jpg */,
+				E9DB84001D5D07CD00A94824 /* asteroid_belt.png */,
+				E9DB84011D5D07CD00A94824 /* atmosphere.jpg */,
+				E9DB84021D5D07CD00A94824 /* badges.txt */,
+				E9DB84031D5D07CD00A94824 /* blue-btn.png */,
+				E9DB84041D5D07CD00A94824 /* callisto.jpg */,
+				E9DB84051D5D07CD00A94824 /* ceres.jpg */,
+				E9DB84061D5D07CD00A94824 /* Default-568h@2x.png */,
+				E9DB84071D5D07CD00A94824 /* deimos.jpg */,
+				E9DB84081D5D07CD00A94824 /* dione.jpg */,
+				E9DB84091D5D07CD00A94824 /* earth.jpg */,
+				E9DB840A1D5D07CD00A94824 /* enceladus.jpg */,
+				E9DB840B1D5D07CD00A94824 /* europa.jpg */,
+				E9DB840C1D5D07CD00A94824 /* ganymede.jpg */,
+				E9DB840D1D5D07CD00A94824 /* green-btn.png */,
+				E9DB840E1D5D07CD00A94824 /* iapetus.jpg */,
+				E9DB840F1D5D07CD00A94824 /* Icon-App.png */,
+				E9DB84101D5D07CD00A94824 /* Icon-Settings.png */,
+				E9DB84111D5D07CD00A94824 /* Icon-Spotlight.png */,
+				E9DB84121D5D07CD00A94824 /* info@2x.png */,
+				E9DB84131D5D07CD00A94824 /* interstellar_space.jpg */,
+				E9DB84141D5D07CD00A94824 /* io.jpg */,
+				E9DB84151D5D07CD00A94824 /* kuiper_belt.png */,
+				E9DB84161D5D07CD00A94824 /* magnetotail.png */,
+				E9DB84171D5D07CD00A94824 /* mapPin@2x.png */,
+				E9DB84181D5D07CD00A94824 /* mars.jpg */,
+				E9DB84191D5D07CD00A94824 /* mimas.jpg */,
+				E9DB841A1D5D07CD00A94824 /* miranda.jpg */,
+				E9DB841B1D5D07CD00A94824 /* moon.jpg */,
+				E9DB841C1D5D07CD00A94824 /* oberon.jpg */,
+				E9DB841D1D5D07CD00A94824 /* phobos.jpg */,
+				E9DB841E1D5D07CD00A94824 /* pluto.jpg */,
+				E9DB841F1D5D07CD00A94824 /* red-btn.png */,
+				E9DB84201D5D07CD00A94824 /* rhea.jpg */,
+				E9DB84211D5D07CD00A94824 /* saturn.jpg */,
+				E9DB84221D5D07CD00A94824 /* spaceship-gold.png */,
+				E9DB84231D5D07CD00A94824 /* spaceship-silver.png */,
+				E9DB84241D5D07CD00A94824 /* success.wav */,
+				E9DB84251D5D07CD00A94824 /* tethys.jpg */,
+				E9DB84261D5D07CD00A94824 /* titan.jpg */,
+				E9DB84271D5D07CD00A94824 /* titania.jpg */,
+				E9DB84281D5D07CD00A94824 /* triton.jpg */,
+				E9DB84291D5D07CD00A94824 /* umbriel.jpg */,
+				E9DB82F81D4624B500A94824 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9DB82F31D4624B500A94824 /* ShitHappens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9DB83111D4624B600A94824 /* Build configuration list for PBXNativeTarget "ShitHappens" */;
+			buildPhases = (
+				E9DB82F01D4624B500A94824 /* Sources */,
+				E9DB82F11D4624B500A94824 /* Frameworks */,
+				E9DB82F21D4624B500A94824 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShitHappens;
+			productName = ShitHappens;
+			productReference = E9DB82F41D4624B500A94824 /* ShitHappens.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9DB82EC1D4624B500A94824 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Eugenie Tyan";
+				TargetAttributes = {
+					E9DB82F31D4624B500A94824 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 24C663Z4HT;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E9DB82EF1D4624B500A94824 /* Build configuration list for PBXProject "ShitHappens" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9DB82EB1D4624B500A94824;
+			productRefGroup = E9DB82F51D4624B500A94824 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9DB82F31D4624B500A94824 /* ShitHappens */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9DB82F21D4624B500A94824 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9DB843F1D5D07CD00A94824 /* io.jpg in Resources */,
+				E9DB84301D5D07CD00A94824 /* ceres.jpg in Resources */,
+				E9DB84481D5D07CD00A94824 /* phobos.jpg in Resources */,
+				E9DB84311D5D07CD00A94824 /* Default-568h@2x.png in Resources */,
+				E9DB84451D5D07CD00A94824 /* miranda.jpg in Resources */,
+				E9DB842E1D5D07CD00A94824 /* blue-btn.png in Resources */,
+				E9DB844A1D5D07CD00A94824 /* red-btn.png in Resources */,
+				E9DB84411D5D07CD00A94824 /* magnetotail.png in Resources */,
+				E9DB844B1D5D07CD00A94824 /* rhea.jpg in Resources */,
+				E9DB830D1D4624B600A94824 /* LaunchScreen.storyboard in Resources */,
+				E9DB842D1D5D07CD00A94824 /* badges.txt in Resources */,
+				E9DB84361D5D07CD00A94824 /* europa.jpg in Resources */,
+				E9DB84371D5D07CD00A94824 /* ganymede.jpg in Resources */,
+				E9DB842C1D5D07CD00A94824 /* atmosphere.jpg in Resources */,
+				E9DB842A1D5D07CD00A94824 /* ariel.jpg in Resources */,
+				E9DB830A1D4624B600A94824 /* Assets.xcassets in Resources */,
+				E9DB84391D5D07CD00A94824 /* iapetus.jpg in Resources */,
+				E9DB84511D5D07CD00A94824 /* titan.jpg in Resources */,
+				E9DB843C1D5D07CD00A94824 /* Icon-Spotlight.png in Resources */,
+				E9DB84381D5D07CD00A94824 /* green-btn.png in Resources */,
+				E9DB84521D5D07CD00A94824 /* titania.jpg in Resources */,
+				E9DB84531D5D07CD00A94824 /* triton.jpg in Resources */,
+				E9DB84461D5D07CD00A94824 /* moon.jpg in Resources */,
+				E9DB842F1D5D07CD00A94824 /* callisto.jpg in Resources */,
+				E9DB84471D5D07CD00A94824 /* oberon.jpg in Resources */,
+				E9DB84501D5D07CD00A94824 /* tethys.jpg in Resources */,
+				E9DB84541D5D07CD00A94824 /* umbriel.jpg in Resources */,
+				E9DB83081D4624B500A94824 /* Main.storyboard in Resources */,
+				E9DB84341D5D07CD00A94824 /* earth.jpg in Resources */,
+				E9DB84351D5D07CD00A94824 /* enceladus.jpg in Resources */,
+				E9DB843E1D5D07CD00A94824 /* interstellar_space.jpg in Resources */,
+				E9DB84321D5D07CD00A94824 /* deimos.jpg in Resources */,
+				E9DB843B1D5D07CD00A94824 /* Icon-Settings.png in Resources */,
+				E9DB84331D5D07CD00A94824 /* dione.jpg in Resources */,
+				E9DB84441D5D07CD00A94824 /* mimas.jpg in Resources */,
+				E9DB844F1D5D07CD00A94824 /* success.wav in Resources */,
+				E9DB84421D5D07CD00A94824 /* mapPin@2x.png in Resources */,
+				E9DB844D1D5D07CD00A94824 /* spaceship-gold.png in Resources */,
+				E9DB84431D5D07CD00A94824 /* mars.jpg in Resources */,
+				E9DB844E1D5D07CD00A94824 /* spaceship-silver.png in Resources */,
+				E9DB843A1D5D07CD00A94824 /* Icon-App.png in Resources */,
+				E9DB842B1D5D07CD00A94824 /* asteroid_belt.png in Resources */,
+				E9DB84491D5D07CD00A94824 /* pluto.jpg in Resources */,
+				E9DB84401D5D07CD00A94824 /* kuiper_belt.png in Resources */,
+				E9DB844C1D5D07CD00A94824 /* saturn.jpg in Resources */,
+				E9DB843D1D5D07CD00A94824 /* info@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9DB82F01D4624B500A94824 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9DB83051D4624B500A94824 /* DetailViewController.m in Sources */,
+				E9DB83201D4626FE00A94824 /* Run.m in Sources */,
+				E9DB83161D4624E100A94824 /* ShitHappens.xcdatamodeld in Sources */,
+				E9DB83221D4626FE00A94824 /* Location.m in Sources */,
+				E9DB83211D4626FE00A94824 /* Location+CoreDataProperties.m in Sources */,
+				E91E68091D8EAC9A008E3C29 /* HomeViewController.m in Sources */,
+				E9DB831F1D4626FE00A94824 /* Run+CoreDataProperties.m in Sources */,
+				E91E680C1D8EADA3008E3C29 /* NewRunViewController.m in Sources */,
+				E9A9BA1B1D8F94DE0008C5B7 /* MathController.m in Sources */,
+				E9DB82FC1D4624B500A94824 /* AppDelegate.m in Sources */,
+				E9DB82F91D4624B500A94824 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9DB83061D4624B500A94824 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9DB83071D4624B500A94824 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9DB830B1D4624B600A94824 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9DB830C1D4624B600A94824 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9DB830F1D4624B600A94824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9DB83101D4624B600A94824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9DB83121D4624B600A94824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShitHappens/ShitHappens.entitlements;
+				INFOPLIST_FILE = ShitHappens/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Eugenie.ShitHappens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9DB83131D4624B600A94824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShitHappens/ShitHappens.entitlements;
+				INFOPLIST_FILE = ShitHappens/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Eugenie.ShitHappens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9DB82EF1D4624B500A94824 /* Build configuration list for PBXProject "ShitHappens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9DB830F1D4624B600A94824 /* Debug */,
+				E9DB83101D4624B600A94824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9DB83111D4624B600A94824 /* Build configuration list for PBXNativeTarget "ShitHappens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9DB83121D4624B600A94824 /* Debug */,
+				E9DB83131D4624B600A94824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E9DB83141D4624E100A94824 /* ShitHappens.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9DB83151D4624E100A94824 /* ShitHappens.xcdatamodel */,
+			);
+			currentVersion = E9DB83151D4624E100A94824 /* ShitHappens.xcdatamodel */;
+			path = ShitHappens.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E9DB82EC1D4624B500A94824 /* Project object */;
+}
